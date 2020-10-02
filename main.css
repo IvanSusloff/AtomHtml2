@@ -1,0 +1,303 @@
+
+body {
+margin: 0px;
+padding: 0px;
+}
+
+.header {
+border-bottom: 2px solid #dc0101;
+}
+.page {
+
+}
+.footer {
+
+}
+.column {
+/*border: 1px solid black;*/
+width: 1000px;
+margin: 0px auto;
+
+}
+.page .column {
+  height: 100vh
+}
+#logo-i-social{
+  display: flex;
+}
+#logo-holder img {
+height: 130px;
+}
+#social-holder{
+flex-grow:1;
+text-align: right;
+}
+#social-holder a {
+  text-decoration: none;
+}
+#social-holder a > img {
+  margin: 7px;
+  height: 80px;
+  width: 80px;
+}
+#main-menu {
+  display: flex;
+}
+#main-menu a {
+  flex-grow: 1;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #dc0101;
+  transition: 500ms;
+}
+#main-menu a:hover,
+#main-menu a.active {
+  color: #ffffff;
+  background: #dc0101;
+  background: cover;
+}
+#Home {
+  text-align: center;
+  color: #ffffff;
+  background: url('Image1/pozadina1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#Home h1 {
+  font-size: 42pt;
+  margin-top:0px;
+  padding-top: calc(50vh - 400px);
+
+}
+.dark-box{
+  background-color: #33333350;
+  border: 1px solid #ffffff;
+  font-size: 24pt;
+  padding: 40px;
+}
+#Services {
+  text-align: center;
+  color: #ffffff;
+  background: url('Image1/pozadina2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#career {
+  text-align: center;
+  color: #ff;
+
+  background: url('Image1/career1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#About h2{
+  font-size: 4Vh;
+
+}
+.align-center {
+  text-align: center;
+  margin: 100px;
+
+}
+.Krugovi {
+  display: flex;
+  margin: 75px 0;
+}
+.Krug-holder {
+  flex-grow:1;
+  text-align: center;
+}
+.krug {
+  background: #dc0101;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  /*width: 200px;
+  height: 200px;*/
+  display: inline-block;
+  padding: 25%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.oznaka {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.Technologies {
+display: flex;
+
+
+}
+.Technology {
+  flex-grow: 1;
+  text-align: center;
+}
+.Technology img {
+  width: 48px;
+  height: 48px;
+
+}
+.Technology p {
+  font-weight: bold;
+  text-align:justify;
+}
+#Services {
+color: #ffff;
+font-size: 100%;
+}
+#Services div img {
+height: 200px;
+width: 200px;
+justify-content: space-between;
+
+}
+#Services h2 {
+padding-top: 40px;
+font-size: 4Vh;
+
+
+}
+.Service-Row {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+.Service-Row > div {
+  text-align: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+}
+.Service-Row > div > img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+}
+.Service-Row > div > p {
+  position: absolute;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  padding: 10px;
+  background-color: #fffb;
+margin-bottom:0px;
+margin-right:0px;
+color: #000;
+font-weight: bold;
+border-top: 1px solid #fff;
+}
+#Products h2 {
+padding-top: 50px;
+text-align: center;
+font-size: 4Vh;
+
+}
+.matrica {
+margin-top: 40px;
+height: 500px;
+display: grid;
+grid-template:"a b c"
+              "d b e"
+              "f f g";
+align-content: space-between;
+justify-content: space-between;
+}
+#product-a {
+  grid-area: a;
+}
+#product-b {
+  grid-area: b;
+}
+#product-c {
+  grid-area: c;
+}
+#product-d {
+  grid-area: d;
+}
+#product-e {
+  grid-area: e;
+}
+#product-f {
+  grid-area: f;
+}
+#product-g {
+  grid-area: g;
+}
+.Product {
+  display: grid;
+  grid-template: "region";
+  align-content: stretch;
+  justify-content: stretch;
+}
+.Product img {
+  grid-area: region;
+  justify-self: stretch;
+  align-self: stretch;
+
+}
+.Product .text-holder {
+  grid-area: region;
+  justify-self: stretch;
+  align-self: stretch;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #dc0101dd;
+  color: #fff;
+  opacity: 0.0;
+  transition: 700ms;
+}
+.Product:hover .text-holder{
+  opacity: 1.0;
+}
+#career h2 {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 4Vh;
+}
+.career-columns {
+display: flex;
+}
+.job-list {
+  flex-grow:1;
+  flex-basis:0;
+}
+.job-descriptions {
+  flex-grow:2;
+  flex-basis:0;
+}
+.job-list label {
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  background-color: #ffffffc0;
+padding: 20px;
+font-weight: bold;
+font-size: 25px
+}
+.job-descriptions input {
+  display: none;
+}
+.job-descriptions .job-description{
+  display: none;}
+.job-descriptions input:checked+.job-description {
+display: block;
+}
+
+.job-description {
+  margin-left: 5px;
+  border: 1px solid #ffffff;
+  background-color: #ffffffc0;
+padding: 10px;
+font-size: 23px
+}
